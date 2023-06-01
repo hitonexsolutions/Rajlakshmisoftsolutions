@@ -284,7 +284,6 @@ input.invalid {
             </nav>
 
 
-
             
             <!-- MultiStep Form -->
             <div class="container px-4 py-5 mt-5 mx-auto">
@@ -294,7 +293,7 @@ input.invalid {
                                 <div>
                                     <form id="regForm" class="custom-form ebook-download-form bg-white shadow" action="">
                             
-                                        <h1>Students:</h1>
+                                        <h1>Register:</h1>
                                         
                                         <!-- One "tab" for each step in the form: -->
                                         <div class="tab">
@@ -325,22 +324,20 @@ input.invalid {
                                         <div class="tab">
                                             <div class="input-group mb-4">
                                                 <select class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required name="course-selection" id="course-selection">
-                                                    <option value="">experience</option>
-                                                    <option value="fresher">Fresher</option>
-                                                    <option value="6 Months">6 Months</option>
-                                                    <option value="1 Year">1 Year</option>
-                                                    <option value="2 Years">2 Years</option>
-                                                    <option value="3 Years">3 Years</option>
-                                                    <option value="4 Years">4 Years</option>
-                                                    <option value="5 Years and above">5 Years and above</option>
+                                                    <option value="">Time Duration</option>
+                                                    <option value="1 day">1 day</option>
+                                                    <option value="1 week">1 week</option>
+                                                    <option value="2 weeks">2 weeks</option>
+                                                    <option value="3 weeks">3 weeks</option>
+                                                    <option value="1 month">1 month</option>
+                                                    <option value="above 1 month">above 1 month</option>
                                                 </select>
                                                 <span class="input-group-text" id="basic-addon1">
                                                     <i class="custom-form-icon bi-chevron-down"></i>
                                                 </span>
                                             </div>
                                             <div class="input-group mb-4">
-                                                <input class="form-control" placeholder="Skills" oninput="this.className = ''">
-                            
+                                                <textarea class="form-control" placeholder="description" oninput="this.className = ''"></textarea>
                                                 <span class="input-group-text" id="basic-addon2">
                                                     <i class="custom-form-icon bi-envelope"></i>
                                                 </span>
@@ -350,21 +347,20 @@ input.invalid {
                                         <div class="tab">
                                             <div class="input-group mb-4">
                                                 <select class="form-control" aria-label="ebook-form-name" aria-describedby="basic-addon1" placeholder="Your Name" required name="course-selection" id="course-selection">
-                                                    <option value="">Select a time</option>
-                                                    <option value="2 hours">2 hours</option>
-                                                    <option value="4 hours">4 hours</option>
-                                                    <option value="6 hours">6 hours</option>
-                                                    <option value="8 hours">8 hours</option>
-                                                    <option value="10 hours">10 hours</option>
-                                                    <option value="12 hours and above">12 hours and above</option>
+                                                    <option value="">No of resources</option>
+                                                    <option value="1 day">1 day</option>
+                                                    <option value="1 week">1 week</option>
+                                                    <option value="2 weeks">2 weeks</option>
+                                                    <option value="3 weeks">3 weeks</option>
+                                                    <option value="1 month">1 month</option>
+                                                    <option value="above 1 month">above 1 month</option>
                                                 </select>
                                                 <span class="input-group-text" id="basic-addon1">
                                                     <i class="custom-form-icon bi-chevron-down"></i>
                                                 </span>
                                             </div>
-                                            <h6>Resume</h6>
                                             <div class="input-group mb-4">
-                                                <input class="form-control" type="file" placeholder="mm" oninput="this.className = ''">
+                                                <input class="form-control" placeholder="mm" oninput="this.className = ''">
                             
                                                 <span class="input-group-text" id="basic-addon2">
                                                     <i class="custom-form-icon bi-envelope"></i>
@@ -373,7 +369,7 @@ input.invalid {
                                             
                                         </div>
                                         
-                                        
+                                       
                                         
                                         <div style="overflow:auto;">
                                             <button style="width: 200px; " class="form-control mb-3" type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
